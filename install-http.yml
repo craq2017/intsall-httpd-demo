@@ -10,7 +10,7 @@
 
   - name: Ansible copy files from a directory to remote server
     copy:
-      src: http://172.16.90.131/src/funny-eyes
+      src: http://172.16.90.131/src/funny-eyes/
       dest: /var/www/html/
       remote_src: yes
   - name: set the SELinux on all the Files
