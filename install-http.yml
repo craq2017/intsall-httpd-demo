@@ -10,8 +10,8 @@
 
   - name: Ansible copy files from a directory to remote server
     get_url:
-    url: http://172.16.90.131/src/funny-eyes/
-    dest: /var/www/html/
+      url: http://172.16.90.131/src/funny-eyes/
+      dest: /var/www/html/
     
   - name: set the SELinux on all the Files
     command: restorecon -Rv /var/www/html
